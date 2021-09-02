@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Makes this a spring boot project -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<!-- Identifier of this project -->
+	<groupId>com.sahil</groupId>
+	<artifactId>movieBookingSystem</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>movieBookingSystem</name>
+	<description>This is the spring boot project for creating the movie booking system</description>
+
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+
+	<!-- Whatever we depend on is added under dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+        <!-- Add the dependency for JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+<!--			<version>2.5.2</version>-->
+		</dependency>
+
+		<!-- Add the dependency for the ModelMapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.4.4</version>
+		</dependency>
+
+		<!--Add the dependency for Spring security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.5.2</version>
+		</dependency>
+
+
+		<!-- Add the dependency for H2 -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Extra dependency -->
+<!--		<dependency>-->
+<!--			<groupId>javax.xml.bind</groupId>-->
+<!--			<artifactId>jaxb-api</artifactId>-->
+<!--&lt;!&ndash;			<version>2.3.0</version>&ndash;&gt;-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>org.hibernate</groupId>-->
+<!--			<artifactId>hibernate-core</artifactId>-->
+<!--&lt;!&ndash;			<version>4.1.4.Final</version>&ndash;&gt;-->
+<!--		</dependency>-->
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
