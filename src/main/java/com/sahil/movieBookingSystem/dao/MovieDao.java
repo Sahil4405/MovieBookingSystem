@@ -5,6 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
+/**
+* Learn about CRUDRepository Also,, similar to JpaRepository,
+* JpaRepository is little mmore extend of CRUDRepository
+*/
 public interface MovieDao extends JpaRepository<Movie, Integer> {
 
     /**
